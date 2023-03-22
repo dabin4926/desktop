@@ -1,0 +1,15 @@
+stu = []
+sum = 0
+
+for i in range(5):
+    score = int(input())
+    stu.append(score)
+
+for j in range(5):
+    if (stu[j] < 40):
+        stu[j] = 40
+
+for k in range(5):
+    sum += stu[k]
+
+print(int(sum/5))
