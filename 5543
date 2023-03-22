@@ -1,0 +1,22 @@
+a = []
+b = []
+a_min = 2001
+b_min = 2001
+
+for i in range (3):
+    c = int(input())
+    a.append(c)
+
+for i in range (2):
+    c = int(input())
+    b.append(c)
+
+for i in range (3):
+    if (a_min > a[i]):
+        a_min = a[i]
+
+for i in range (2):
+    if (b_min > b[i]):
+        b_min = b[i]
+
+print((a_min + b_min) - 50)
