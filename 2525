@@ -1,0 +1,10 @@
+hour, minute = map(int, input().split())
+time = int(input())
+
+end = minute + time
+
+if((hour + (end//60)) >= 24):
+    hour += (end//60)
+    print((hour - 24), end % 60)
+else:
+    print((hour + (end//60)), end % 60)
